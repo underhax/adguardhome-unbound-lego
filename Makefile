@@ -46,7 +46,7 @@ shell-coverage:
 shell-verify: shell-lint shell-test
 
 secrets-scan:
-	gitleaks detect --source . --no-git --no-color
+	gitleaks detect --source . --no-git --no-color -v --redact
 
 verify: check test vulncheck shell-verify trivy docker-lint secrets-scan
 

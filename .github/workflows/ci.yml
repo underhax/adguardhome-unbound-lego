@@ -136,7 +136,7 @@ jobs:
         run: checkbashisms -f usr/local/bin/angie_cert_sync.sh tests/angie_cert_sync_test.sh || true
 
       - name: Setup bashunit
-        uses: TypedDevs/bashunit@8d4f357f52df7596f92ece2d6c049d91d45517a2 # 0.52.0
+        uses: TypedDevs/bashunit@97a6b664a59edcb1ade450c3a6400728f3481115 # 0.53.0
 
       - name: Run unit tests
         run: bashunit tests/
