@@ -1,5 +1,5 @@
 FROM adguard/adguardhome:v1.0.0@sha256:f00a586f0d1caa74f149340bfb225014960310488ffa838406b89256900a96c2 AS agh
-FROM goacme/lego:v5.6.0@sha256:6f1583fc026a455ea46a7a5858c576105bb69c2e2de69db391cab7f14750350c AS lego
+FROM goacme/lego:v5.7.0@sha256:9fe6151508c0e1ddc51a6d3e474353520f4b008782bf0c6d31676da72e6d4766 AS lego
 FROM alpine:3.24.4@sha256:f59abe656b692d901e184be3445e084786602108599d2a51d229c0f5a48c71bf AS unbound-donor
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
